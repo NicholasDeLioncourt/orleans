@@ -73,7 +73,7 @@ Task IRemindable.ReceiveReminder(string reminderName, TickStatus status)
 }
 ```
 
- To start a reminder, use the **Grain.RegisterOrUpdateReminder** method, which returns an **IOrleansReminder** object:
+ To start a reminder, use the **Grain.RegisterOrUpdateReminder** method, which returns an **IGrainReminder** object:
 
 ``` csharp
 protected Task<IOrleansReminder> RegisterOrUpdateReminder(string reminderName, TimeSpan dueTime, TimeSpan period)
